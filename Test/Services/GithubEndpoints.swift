@@ -29,12 +29,6 @@ extension Github: TargetType {
         switch self {
         case .repos(let name):
             return "/users/\(name)/repos"
-//        case .userProfile(let name):
-//            return "/users/\(name.URLEscapedString)"
-//        case .repo(let name):
-//            return "/repos/\(name)"
-//        case .issues(let repositoryName):
-//            return "/repos/\(repositoryName)/issues"
         }
     }
     

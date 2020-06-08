@@ -48,7 +48,7 @@ class SearchViewModel: ViewModelType, SearchViewModelInput, SearchViewModelOutpu
     
     private func registerObservers() {
         
-        //Controller must call navigation, just example
+        //Coordinator(Router) must call navigation, just example
         selected
             .subscribe(onNext: { [navigationController] (repository: Repository) in
                 
